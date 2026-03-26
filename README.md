@@ -79,24 +79,14 @@ This project shows how decentralized applications can be used in education syste
 Contract Address:
 
 ```
-PUT_YOUR_CONTRACT_ID_HERE
-```
-
-Example:
-
-```
-CBUXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-You can get the contract ID after deploy:
-
+1d81893574b6587d718303e6efb969c44154a1bb978fde82f93c90ed112bbd79
 ```
 stellar contract deploy
 ```
 
 Screenshot:
 
-![Contract](screenshots/contract.png)
+![Contract](screenshoots/contract.jpg)
 
 ---
 
