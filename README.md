@@ -6,79 +6,78 @@ Stellar Student DApp – Blockchain Based Student Data Management System
 
 ## Project Description
 
-Stellar Student DApp is a decentralized smart contract solution built on the Stellar blockchain using Soroban SDK.
-This project provides a secure and transparent platform for storing and managing student data directly on-chain.
+Stellar Student DApp is a decentralized smart contract application built using Soroban SDK on the Stellar blockchain.
 
-The smart contract allows users to create, view, update, and delete student records using predefined contract functions.
-All student information is stored in the contract storage, ensuring data persistence, integrity, and decentralization without relying on centralized databases.
+This project allows users to store and manage student data directly on-chain using a smart contract written in Rust.
 
-Each student record is uniquely identified and permanently stored on the blockchain, providing reliability and security.
+The contract supports basic CRUD operations:
+
+* Create student
+* Read students
+* Update student
+* Delete student
+
+All data is stored in contract storage, making it secure, decentralized, and permanent.
 
 ---
 
 ## Project Vision
 
-Our vision is to demonstrate how blockchain technology can be used for secure academic data management by:
+This project demonstrates how blockchain technology can be used for academic data management.
 
-* Decentralizing Data Storage — moving student records to a distributed blockchain network
-* Ensuring Ownership — data cannot be modified without contract interaction
-* Guaranteeing Integrity — records stored on-chain cannot be tampered with
-* Enhancing Security — blockchain cryptography protects stored information
-* Building Trustless Systems — no central authority required
+Goals:
 
-This project shows how decentralized applications can be used in education systems.
+* Store student data on blockchain
+* Remove centralized database dependency
+* Ensure data integrity
+* Provide transparent data access
+* Demonstrate Soroban smart contract usage
 
 ---
 
-## Key Features
+## Features
 
-### 1. Student Creation
-
-* Add new student data using smart contract
-* Automatic ID generation
-* Store name and major
-* Persistent blockchain storage
-
-### 2. Data Retrieval
-
-* Fetch all stored students
-* Fast access from contract storage
-* Structured data format
-* Ready for frontend integration
-
-### 3. Update Student
-
-* Modify student name or major
-* Update using student ID
-* Changes stored permanently on-chain
-
-### 4. Delete Student
-
-* Remove student by ID
-* Immediate update of storage
-* Clean data management
-
-### 5. Blockchain Security
-
-* Data stored on Stellar blockchain
-* Immutable transaction history
-* Safe smart contract execution
-* No centralized database
-
-### 6. Soroban Smart Contract
-
-* Built using Rust
-* Uses soroban_sdk
+* Create student data
+* Read all students
+* Update student data
+* Delete student data
+* Stored on Stellar blockchain
+* Built with Rust
+* Uses Soroban SDK
 * Uses contract storage
-* Uses Vec and Symbol keys
+
+---
+
+## Data Structure
+
+Each student contains:
+
+* id
+* name
+* major
+
+Example:
+
+```
+Student {
+  id: 1,
+  name: "John",
+  major: "Computer Science"
+}
+```
 
 ---
 
 ## Contract Details
 
-Contract Address:
+Contract Address
+
 ```
 1d81893574b6587d718303e6efb969c44154a1bb978fde82f93c90ed112bbd79
+```
+
+Deploy command
+
 ```
 stellar contract deploy
 ```
@@ -89,41 +88,16 @@ stellar contract deploy
 
 ![Contract](screenshoots/contract.jpg)
 
-
-
 ---
 
 ## Future Scope
 
-### Short-Term Improvements
-
-1. Add student age field
-2. Add GPA field
-3. Add search function
-4. Add pagination
-
-### Medium-Term Development
-
-5. Frontend integration
-6. Wallet authentication
-7. Multi-user interaction
-8. Event logging
-
-### Long-Term Vision
-
-9. Full academic record system
-10. Multi-contract integration
-11. Cross-chain storage
-12. Decentralized identity support
-13. NFT certificate storage
-14. DAO-based management
-
-### Enterprise Features
-
-15. University record system
-16. Audit logging
-17. Access permissions
-18. Multi-language support
+* Add age field
+* Add GPA field
+* Add search feature
+* Add frontend UI
+* Add wallet login
+* Add multi user support
 
 ---
 
@@ -132,26 +106,26 @@ stellar contract deploy
 * Rust
 * Soroban SDK
 * Stellar CLI
-* Stellar Network
+* Stellar Testnet
 * Smart Contract Storage
 
 ---
 
-## Getting Started
+## How to Run
 
-Build contract
+Build
 
 ```
 cargo build
 ```
 
-Deploy contract
+Deploy
 
 ```
 stellar contract deploy
 ```
 
-Invoke functions
+Invoke
 
 ```
 create_student
@@ -160,7 +134,6 @@ update_student
 delete_student
 ```
 
-
 ---
 
-Stellar Student DApp — Secure Student Data on Blockchain
+Stellar Student DApp — Student Data on Blockchain
