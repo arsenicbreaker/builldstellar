@@ -77,16 +77,19 @@ This project shows how decentralized applications can be used in education syste
 ## Contract Details
 
 Contract Address:
-
 ```
 1d81893574b6587d718303e6efb969c44154a1bb978fde82f93c90ed112bbd79
 ```
 stellar contract deploy
 ```
 
-Screenshot:
+---
 
-![Contract](screenshoots/contract.jpg)
+## Screenshot
+
+![Contract](screenshots/contract.jpg)
+
+
 
 ---
 
