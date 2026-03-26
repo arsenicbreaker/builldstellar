@@ -87,7 +87,7 @@ stellar contract deploy
 
 ## Screenshot
 
-![Contract](screenshots/contract.jpg)
+![Contract](screenshoots/contract.jpg)
 
 
 
